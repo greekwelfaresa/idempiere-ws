@@ -1,0 +1,21 @@
+mavencentral:           https://repo.maven.apache.org/maven2
+
+-plugin.10.Repo:\
+    aQute.bnd.repository.maven.provider.MavenBndRepository;\
+        name="iDempiere Maven Dependencies";\
+        releaseUrl="${mavencentral}";\
+        index="${.}/idempiere.mvn";\
+        readOnly=true
+      
+#-plugin.20.Repo:\
+#	aQute.bnd.repository.osgi.OSGiRepository;\
+#        name="iDempiere Test";\
+#        locations="https://raw.githubusercontent.com/greekwelfaresa/idempiere-test/master/dist/bundles/index.xml";\
+#        poll.time=86000;\
+#        cache="${workspace}/cnf/cache/stable/idempiere-test"
+        
+-plugin.30.Repo:\
+    aQute.bnd.repository.p2.provider.P2Repository; \
+        url = "${idempiere.url}";\
+        name = "iDempiere 7.1";\
+        location="${workspace}/cnf/cache/stable/idempiere-local"

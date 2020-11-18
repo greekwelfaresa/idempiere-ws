@@ -1,0 +1,9 @@
+# Import-Package clauses for iDempiere packages
+# We use bundle-symbolic-name and bundle-version because iDempiere is
+# not the best at managing packages and Require-Bundle is too promiscuous.
+-include idempiere-noimport.bnd
+ 
+Import-Package: ${compiere.importpackage},\
+	${adempiere.importpackage},\
+	${idempiere.importpackage},\
+	*

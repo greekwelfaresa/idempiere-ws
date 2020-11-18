@@ -1,0 +1,32 @@
+junit.jupiter.version=5.7.0
+junit.platform.version=1.7.0
+assertj.version=3.18.1
+osgi-test.version=0.10.0
+idempiere-test.version=1.0.0-SNAPSHOT
+
+junit: \
+    junit-platform-commons;version=latest,\
+    junit-platform-engine;version=latest,\
+    assertj-core;version=latest,\
+    org.opentest4j;version=latest,\
+    org.apiguardian:apiguardian-api;version=latest,\
+    junit-jupiter-api;version=latest,\
+    junit-jupiter-engine;version=latest,\
+    junit-jupiter-params;version=latest,\
+
+mockito: org.mockito.mockito-core;version="[3,4)",\
+    net.bytebuddy.byte-buddy;version="[1,2)",\
+    org.objenesis;version="[3,4)"
+
+osgi-test: \
+	org.osgi.test.assertj.framework,\
+	org.osgi.test.assertj.promise,\
+	org.osgi.test.common,\
+	org.osgi.test.junit5
+
+idempiere-test: \
+	au.org.greekwelfaresa.idempiere.test.common,\
+	au.org.greekwelfaresa.idempiere.test.assertj,\
+	au.org.greekwelfaresa.idempiere.test.junit5
+
+-runsystempackages.objenesis: sun.misc,sun.reflect
