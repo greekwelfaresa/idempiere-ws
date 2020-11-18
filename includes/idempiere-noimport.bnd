@@ -1,0 +1,16 @@
+# Import-Package clauses for iDempiere packages
+# We use bundle-symbolic-name and bundle-version because iDempiere is
+# not the best at managing packages and Require-Bundle is too promiscuous.
+
+-fixupmessages.import-compiere: 'Unused Import-Package instructions:*org.compiere.';is:=ignore
+-fixupmessages.import-adempiere: 'Unused Import-Package instructions:*org.adempiere.';is:=ignore
+-fixupmessages.import-idempiere: 'Unused Import-Package instructions:*org.idempiere.';is:=ignore
+
+compiere.importpackage: \
+ org.compiere.*;bundle-symbolic-name="${@bundlesymbolicname}";bundle-version="${range;[==,+);${@bundleversion}}";version=!
+
+adempiere.importpackage: \
+ org.adempiere.*;bundle-symbolic-name="${@bundlesymbolicname}";bundle-version="${range;[==,+);${@bundleversion}}";version=!
+
+idempiere.importpackage: \
+ org.idempiere.*;bundle-symbolic-name="${@bundlesymbolicname}";bundle-version="${range;[==,+);${@bundleversion}}";version=!
