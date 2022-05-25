@@ -1,7 +1,7 @@
-junit.jupiter.version=5.7.0
-junit.platform.version=1.7.0
+junit.jupiter.version=5.8.1
+junit.platform.version=1.8.1
 assertj.version=3.18.1
-osgi-test.version=0.10.0
+osgi-test.version=1.0.1
 idempiere-test.version=1.0.0-SNAPSHOT
 
 junit: \
