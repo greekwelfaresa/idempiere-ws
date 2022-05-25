@@ -17,5 +17,5 @@ mavencentral:           https://repo.maven.apache.org/maven2
 -plugin.30.Repo:\
     aQute.bnd.repository.p2.provider.P2Repository; \
         url = "${idempiere.url}";\
-        name = "iDempiere 7.1";\
+        name = "iDempiere 9";\
         location="${workspace}/cnf/cache/stable/idempiere-local"
