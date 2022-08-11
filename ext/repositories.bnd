@@ -19,3 +19,11 @@ mavencentral:           https://repo.maven.apache.org/maven2
         url = "${idempiere.url}";\
         name = "iDempiere 9";\
         location="${workspace}/cnf/cache/stable/idempiere-local"
+
+
+
+-plugin.25.Repo:\
+    aQute.bnd.repository.p2.provider.P2Repository; \
+        url = "https://idempiere.github.io/binary.file/p2.zk/9.6.1/";\
+        name = "ZK iDempiere";\
+        location="${workspace}/cnf/cache/stable/zk"
