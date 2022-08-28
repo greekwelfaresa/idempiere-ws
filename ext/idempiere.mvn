@@ -58,10 +58,10 @@ org.apache.felix:org.apache.felix.gogo.jline:1.1.8
 org.jline:jline:3.21.0
 
 # Mockito
-org.objenesis:objenesis:3.1
-org.mockito:mockito-core:3.5.13
-net.bytebuddy:byte-buddy:1.10.5
-net.bytebuddy:byte-buddy-agent:1.10.5
+org.objenesis:objenesis:3.2
+net.bytebuddy:byte-buddy:1.11.13
+net.bytebuddy:byte-buddy-agent:1.11.13
+org.mockito:mockito-core:3.12.4
 
 # JUnit
 org.junit.jupiter:junit-jupiter-api:${junit.jupiter.version}
